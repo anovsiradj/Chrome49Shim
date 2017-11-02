@@ -1,0 +1,38 @@
+{
+	"manifest_version": 2,
+
+	"name": "Chrome49Shim",
+	"version": "1.0.0",
+
+	"permissions": [
+		"webRequest",
+		"webRequestBlocking",
+		"http://*/*",
+		"https://*/*"
+	],
+
+	"background": {
+		"scripts": [
+			"config.js",
+			"ua-request.js"
+		],
+		"persistent": true
+	},
+
+	"content_scripts": [
+		{
+			"run_at": "document_start",
+			"matches": [
+				"http://*/*",
+				"https://*/*"
+			],
+			"js": [
+				"config.js",
+				"ua-window.js",
+				"polyfills.js"
+			]
+		}
+	]
+
+	// "options_page": "options.html"
+}

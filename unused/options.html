@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<base target="_blank"/>
+	<style type="text/css">
+		body {
+			font-size: large;
+		}
+		input {
+			width: 50%;
+		}
+		pre {
+			white-space: pre-wrap;
+			font-size: large;
+		}
+	</style>
+</head>
+<body>
+
+<h1 data-t="name"></h1>
+<p>Help you to visit modern website that not support old/deprecated browser and OS.</p>
+<p>
+	For
+	<b>Windows XP and Vista, and Mac OS 10.6-10.8</b>
+	<sup><a href="https://en.wikipedia.org/wiki/Google_Chrome_version_history">wikipedia</a></sup>
+</p>
+
+<pre>
+Because, this only "patch" JS-side and DOM-side in browser,
+you also have to "patch" browser identity (or UA a.k.a User-Agent).
+</pre>
+
+<h3>So..,</h3>
+<ol>
+	<li>Make sure, you're using The Latest-Last Chrome (Version 49.0.2623.112)</li>
+	<li>
+		Install extension
+		<a href="https://chrome.google.com/webstore/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg" data-t="uas"></a>
+	</li>
+	<li>
+		After install finished,
+		open <span data-t="uas"></span> <b>options</b> page
+	</li>
+	<li>
+		In <span data-t="uas"></span> <b>options</b>, open <b>Custom User-Agent List</b>.
+		Create new UA with values below.
+	</li>
+	<li>
+		In <span data-t="uas"></span> <b>options</b>, open <b>Permanent Spoof list</b>.
+		Add website that warn you to update browser, with values below.
+	</li>
+</ol>
+
+<p><b>New UA Values:</b></p>
+<pre id="ua">
+<label>name:	<input data-v="ua-name" readonly/></label>
+<label>string:	<input data-v="ua-string" readonly/></label>
+<label>flag:	<input data-v="ua-flag" readonly/></label>
+</pre>
+<p>Or you can use another UA from any latest Browser (I prefer latest Chrome or latest Firefox)</p>
+
+<p><b>New Spoof Values:</b></p>
+<pre>
+<label>domain:	(for example) "github.com", "deviantart.com", etc
+<label>string:	choose "<span data-t="ua-name"></span>" in select-option
+</pre>
+
+<hr/>
+
+<p>
+	Created by <a>anovsiradj</a>.
+	Powered by
+	<a href="https://polyfill.io/v2/docs/">Polyfill Service</a>
+	&copy;
+	Jonathan Neal, The Financial Times Ltd and other
+	<a href="https://github.com/Financial-Times/polyfill-service/graphs/contributors">contributors</a>.
+</p>
+
+<script src="options.js"></script>
+</body>
+</html>

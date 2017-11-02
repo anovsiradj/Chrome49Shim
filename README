@@ -1,0 +1,29 @@
+Current UA (Chrome 60):
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36
+Google, Inc.
+Windows
+
+Base:
+https://polyfill.io/v2/docs/
+
+Official:
+https://developer.chrome.com/extensions/webRequest
+https://developer.chrome.com/extensions/content_scripts
+https://chromium.googlesource.com/chromium/src/+/master/chrome/common/extensions/docs/examples
+
+Secondary:
+https://github.com/yaffle/date-shim
+https://github.com/webcomponents/webcomponentsjs
+https://github.com/webcomponents/custom-elements
+
+Refference:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script
+https://html5test.com/
+https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills
+https://stackoverflow.com/questions/16133614/chrome-extensions-that-runs-js-before-every-page-loads-using-content-script
+
+Library:
+https://stackoverflow.com/questions/11128296/chrome-content-script-to-access-and-modify-window
+https://stackoverflow.com/questions/27576701/chrome-extension-app-settings-javascript
+https://stackoverflow.com/questions/9515704/insert-code-into-the-page-context-using-a-content-script
+https://stackoverflow.com/questions/17438354/how-can-i-enable-my-chrome-extension-in-incognito-mode
