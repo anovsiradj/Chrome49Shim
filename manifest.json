@@ -29,10 +29,8 @@
 			"js": [
 				"config.js",
 				"ua-window.js",
-				"polyfills.js"
+				"inject.js"
 			]
 		}
 	]
-
-	// "options_page": "options.html"
 }
