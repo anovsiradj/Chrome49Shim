@@ -7,9 +7,11 @@ const myConfigData = {
 	ua_platform: 'Windows',
 
 	spoof_blacklist_host: [
-		'youtube.com',
-		'www.youtube.com',
-		'facebook.com',
-		'www.facebook.com',
+		'polyfill.io',
+		// 'reddit.com', 'www.reddit.com', // broken
+		'mozilla.github.io',
+		'youtube.com', 'www.youtube.com',
+		'instagram.com', 'www.instagram.com',
+		'facebook.com', 'www.facebook.com',
 	],
 };
