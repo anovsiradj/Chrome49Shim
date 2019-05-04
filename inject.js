@@ -15,14 +15,14 @@ function scripte(sourcea) {
 
 // using "s" to avoid redirect (http:// > https://)
 var polyfill = 'https://cdn.polyfill.io/v2/polyfill.min.js?features=' +
-	encodeURIComponent([
+	window.encodeURIComponent([
 		'default',
 		'es5',
 		'es6',
 		// '...',
 	].join()) +
 	'&flags=always,gated' +
-	'&ua=' + encodeURIComponent(window.navigator.userAgent);
+	'&ua=' + window.encodeURIComponent(window.navigator.userAgent);
 
 var scripts = [
 	polyfill,
